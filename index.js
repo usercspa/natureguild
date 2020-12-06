@@ -9,6 +9,8 @@ import "firebase/firestore";
 
 import * as firebaseui from 'firebaseui';
 
+require('dotenv').config();
+
 // Document elements
 const login = document.getElementById('Login');
 const discussionContainer = document.getElementById('discussion-container');

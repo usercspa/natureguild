@@ -12,7 +12,6 @@ import * as firebaseui from 'firebaseui';
 // Document elements
 const login = document.getElementById('Login');
 const discussionContainer = document.getElementById('discussion-container');
-
 const thread = document.getElementById('discuss');
 const input = document.getElementById('message');
 const discussion = document.getElementById('discussion');
@@ -22,7 +21,16 @@ var discussionListener = null;
 async function main() {
 
   // Add Firebase project configuration object here
-
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "API_KEY",
+    authDomain: "natureguild-925bc.firebaseapp.com",
+    projectId: "natureguild-925bc",
+    storageBucket: "natureguild-925bc.appspot.com",
+    messagingSenderId: "373023705704",
+    appId: "1:373023705704:web:a4f6f09d97e411afd449dd",
+    measurementId: "G-E2JKJB7NKY"
+  };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
